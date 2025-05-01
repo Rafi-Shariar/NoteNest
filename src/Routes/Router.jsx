@@ -3,6 +3,7 @@ import HomeLayout from "../Layouts/HomeLayout";
 import AddNote from "../Components/HomeComponents/AddNote";
 
 import Home from "../Pages/Home";
+import NoteDetails from "../Pages/NoteDetails";
 
 export const router = createBrowserRouter([
     {
@@ -10,7 +11,8 @@ export const router = createBrowserRouter([
       element: <HomeLayout></HomeLayout>,
       children:[
         { index:true, element:<Home></Home>},
-        {path:'/addnote', element:<AddNote></AddNote>}
+        {path:'/addnote', element:<AddNote></AddNote>},
+        { path:'/notedetails' , element: <NoteDetails></NoteDetails>}
       ]
     },
   ]);

@@ -14,7 +14,7 @@ const HomeLayout = () => {
             <main className='w-11/12 lg:max-w-7xl  mx-auto mt-10'>
 
                 <div className='lg:grid lg:grid-cols-12 lg:gap-10'>
-                    <aside className='bg-slate-400 col-span-3 hidden lg:block'><LeftAside></LeftAside></aside>
+                    <aside className=' col-span-3 hidden lg:block'><LeftAside></LeftAside></aside>
                         <div className='col-span-9'>
                             <Outlet></Outlet>
                         </div>

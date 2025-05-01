@@ -1,5 +1,6 @@
 import React from "react";
 import { BiShow } from "react-icons/bi";
+import { NavLink } from "react-router";
 const NoteCard = () => {
   return (
     <div className="p-4 border rounded-2xl border-slate-400">
@@ -20,7 +21,7 @@ const NoteCard = () => {
       </div>
 
       <div className="w-full">
-        <button className="btn w-full mt-3">Show <BiShow className="text-xl"/></button>
+        <button className="btn w-full mt-3"><NavLink to='/notedetails'>Show </NavLink></button>
       </div>
     </div>
   );
