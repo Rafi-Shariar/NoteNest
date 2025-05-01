@@ -1,5 +1,6 @@
 import React from "react";
 import { LuNotebookPen } from "react-icons/lu";
+import { Navigate, NavLink } from "react-router";
 const Navbar = () => {
   return (
     <div>
@@ -57,7 +58,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end lg:mr-10">
-          <a className="btn hover:bg-blue-500 hover:text-white">Add Note</a>
+          <NavLink className="btn hover:bg-blue-500 hover:text-white" to='/addnote'>Add Notes</NavLink>
+          
         </div>
       </div>
     </div>
